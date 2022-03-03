@@ -1,8 +1,8 @@
 # токен бота
-TOKEN = "token"
+TOKEN = input("Введите токен бота: ") #FOR TRMUX DUDNIK MOMENT
 
 # id чата с логами бота
-logs = 0
+logs = input("Введите id админа: ")
 
 # id админов
-admins = [0]
+admins = logs
