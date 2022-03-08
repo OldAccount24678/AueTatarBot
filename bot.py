@@ -165,7 +165,7 @@ async def handle_cdel_button(c: types.CallbackQuery):
 	msg = "<b>Топ 10 АУЕшников</b>:\n\n"
 	l = db.cursor.fetchall()
 	for i in l:
-		msg += f"{l.index(i) + 1}) {i[0]}:  {i[1]}\n"
+		msg += f"{l.index(i) + 1}) {escape(i[0])}:  {i[1]}\n"
 	await c.message.edit_text(str(msg), reply_markup = kb.play_menu)
 
 if __name__ == '__main__':
