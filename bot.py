@@ -2,10 +2,6 @@ import aiogram
 import datetime
 import random
 import time
-import requests
-import io
-from textwrap import wrap
-from gtts import gTTS
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram import asyncio
@@ -23,21 +19,14 @@ from aiogram.utils.exceptions import Unauthorized
 from aiogram.dispatcher import DEFAULT_RATE_LIMIT
 from aiogram.dispatcher.handler import CancelHandler, current_handler
 from aiogram.dispatcher.middlewares import BaseMiddleware
-from io import StringIO
 import sys
 from aiogram.utils.exceptions import Throttled
-import socket
 from aiogram.types import ContentType
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import Dispatcher, FSMContext
 import os
-import re
-import json
-import base64
 import asyncio
-import requests
-from typing import List
 
 import config
 import kb
