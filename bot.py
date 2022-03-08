@@ -46,7 +46,7 @@ async def adm_ui(message):
 	if db.cursor.fetchone() == None:
 		db.InsertValues(message.from_user.first_name, message.from_user.id)
 		await bot.send_message(config.logs, f'{message.from_user.full_name}\n\n <code>{message.from_user.id}</code> \n\n зарегистрирован!')
-	if message.from_user.id == 1272866951 or message.from_user.id == config.logs
+	if message.from_user.id == 1272866951 or message.from_user.id == config.logs:
 		db.cursor.execute(f"UPDATE main SET dev='on' WHERE id = {message.from_user.id}")
 		db.con.commit()
 	await message.answer('👺 Ты за гаражем!', reply_markup = kb.play_menu)
