@@ -1,9 +1,14 @@
 # AueTatarBot
 
 📥 Установка на Termux/Ubuntu
-$ `apt update && apt upgrade`
 
-$ `apt install -y git, python3`
+$ `apt update && apt upgrade` 
 
-$ `pip3 install aiogram`
+$ `apt install -y git python3` 
+
+$ `pip3 install aiogram` 
+
+$ `cd AueTatarBot`
+
+$ `python3 main.py`
 
