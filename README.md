@@ -8,7 +8,9 @@ $ `apt install -y git python3`
 
 $ `pip3 install aiogram` 
 
-$ `cd AueTatarBot`
+$ `git clone https://github.com/AmokDEV/AueTatarBot`
 
-$ `python3 main.py`
+$ `cd AueTatarBot` 
+
+$ `python3 main.py` 
 
